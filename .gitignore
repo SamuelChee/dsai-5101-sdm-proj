@@ -1,0 +1,18 @@
+# virtualenv and tool caches
+.venv/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# secrets and OS junk
+.env
+.DS_Store

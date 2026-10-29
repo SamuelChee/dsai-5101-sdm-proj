@@ -1,0 +1,9 @@
+{
+  "model": "M0",
+  "rule": "p_a = (n_A + 0.5) / (N + 1)",
+  "p_a": 0.5155238586240477,
+  "n_fitting": 17456,
+  "n_a_fitting": 8999,
+  "validation_log_loss": 0.6921400963853569,
+  "n_strict_validation_rows": 3712
+}

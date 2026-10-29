@@ -1,0 +1,39 @@
+check_id,scope,status,n_affected,detail
+raw_file_hashes,train.csv/test.csv,INFO,0,SHA-256 recorded; raw files left unchanged.
+train_required_columns,train,PASS,0,All 13 required columns present in order.
+train_row_count,train,PASS,0,24896 rows (README states 24896); matches.
+train_row_id_uniqueness,train,PASS,0,0 duplicated train_row_id values.
+test_required_columns,test,PASS,0,All 14 required columns present in order.
+test_row_count,test,PASS,0,6224 rows (README states 6224); matches.
+test_row_id_uniqueness,test,PASS,0,0 duplicated test_row_id values.
+train_choice_labels,train,PASS,0,"All train choices in {A, B}."
+test_labels_blank,test,PASS,0,test choice blank in 6224/6224 rows; prob_a blank in 6224/6224 rows.
+comparison_type_values,train,PASS,0,"comparison_type values exactly ['between_cats', 'within_cat']."
+comparison_type_values_test,test,PASS,0,"comparison_type values exactly ['between_cats', 'within_cat']."
+cat_identity_vs_comparison_type,train,PASS,0,a_cat == b_cat iff comparison_type == 'within_cat'.
+cat_identity_vs_comparison_type_test,test,PASS,0,a_cat == b_cat iff comparison_type == 'within_cat'.
+image_folder_matches_cat,train.a_image,PASS,0,0 rows where the image folder != a_cat.
+image_folder_matches_cat_train_b,train.b_image,PASS,0,0 rows where the image folder != b_cat.
+image_folder_matches_cat_test_a,test.a_image,PASS,0,0 rows where the image folder != a_cat.
+image_folder_matches_cat_test_b,test.b_image,PASS,0,0 rows where the image folder != b_cat.
+self_comparisons,train,PASS,0,No same-image self-comparisons.
+self_comparisons_test,test,PASS,0,No same-image self-comparisons.
+identical_response_rows,train,INFO,0,0 rows in 0 identical-value groups; retained (they may be distinct annotators giving the same answer).
+unit_counts,train/test,INFO,0,"train: 237 cats, 1296 photos, 8049 unordered pairs; test: 284 cats, 1389 photos, 2029 unordered pairs; overlap: 1127 photos, 0 pairs."
+context_gender_train,train.gender,WARN,508,"missing=508; values={'man': 13998, 'woman': 10390}"
+context_pet_history_train,train.pet_history,WARN,508,"missing=508; values={'current': 8650, 'never': 9315, 'past': 6423}"
+context_pet_care_train,train.pet_care,WARN,508,"missing=508; values={'current_regular': 3654, 'never': 7129, 'occasionally': 6470, 'past_regular': 7135}"
+context_pet_contact_train,train.pet_contact,WARN,508,"missing=508; values={'daily': 5084, 'never': 1054, 'often': 4891, 'rarely': 7566, 'sometimes': 5793}"
+context_future_pet_train,train.future_pet,WARN,508,"missing=508; values={'no': 2382, 'unsure': 4834, 'yes': 17172}"
+context_mbti_ie_train,train.mbti_ie,WARN,508,"missing=508; values={'E': 6346, 'I': 14000, 'unknown': 4042}"
+context_gender_test,test.gender,WARN,130,"missing=130; values={'man': 3505, 'woman': 2589}"
+context_pet_history_test,test.pet_history,WARN,130,"missing=130; values={'current': 2150, 'never': 2341, 'past': 1603}"
+context_pet_care_test,test.pet_care,WARN,130,"missing=130; values={'current_regular': 865, 'never': 1806, 'occasionally': 1637, 'past_regular': 1786}"
+context_pet_contact_test,test.pet_contact,WARN,130,"missing=130; values={'daily': 1261, 'never': 264, 'often': 1175, 'rarely': 1946, 'sometimes': 1448}"
+context_future_pet_test,test.future_pet,WARN,130,"missing=130; values={'no': 621, 'unsure': 1186, 'yes': 4287}"
+context_mbti_ie_test,test.mbti_ie,WARN,130,"missing=130; values={'E': 1619, 'I': 3461, 'unknown': 1014}"
+image_existence,images,PASS,0,1558/1558 referenced images exist; 1558 files on disk; 0 unreferenced files.
+image_count_vs_readme,images,PASS,0,1558 image files on disk (README states 1558).
+image_readability,images,PASS,0,1558/1558 existing referenced images readable by Pillow.
+image_duplicate_content,images,INFO,0,0 SHA-256 values shared by more than one image path.
+official_test_coverage,test,INFO,0,"Official test rows by train overlap: {'both_images_seen_new_pair': 3112, 'one_image_seen': 1556, 'no_images_seen': 1556}."

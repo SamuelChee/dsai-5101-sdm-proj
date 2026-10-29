@@ -1,0 +1,37 @@
+# Frozen pipeline configuration (Stage 0 defaults from the project plan).
+# Only settings needed by implemented stages are active; the rest are recorded
+# here so later stages reuse one source of truth.
+#
+# run v1: primary analysis, G3 off. See runs_disclosure.md.
+
+run_id: v1
+
+paths:
+  train_csv: dataset/train.csv
+  test_csv: dataset/test.csv
+  images_dir: dataset/images
+  artifacts_dir: artifacts
+  tables_dir: tables
+  figures_dir: figures
+  models_dir: models
+
+seeds:
+  split: 20261028
+  simulation: 20261029
+  learning_curves: [20261030, 20261031]
+  bootstrap: 20261101
+  synthetic_label_control: 20261102
+
+expected:
+  train_rows: 24896
+  test_rows: 6224
+  n_images: 1558
+
+split:
+  fractions: [0.70, 0.15, 0.15]  # fitting, validation, internal test
+  partitions: [fitting, validation, test]
+  count_bands: [1, 2-4, 5-9, 10+]
+  merge_threshold: 20  # strata with fewer pairs merge into comparison type
+
+flags:
+  enable_g3: false

@@ -1,0 +1,10 @@
+{
+  "stage": 11,
+  "status": "not_run",
+  "reason": "flags.enable_g3 is false (Stage 0 default); no photo pools were reserved before the G2 split in Stage 3. Per the plan (Stage 11 risks/fallbacks), no supposedly untouched G3 test may be added later; G3 capability of the visual models is noted in the report as a capability, not a demonstrated result.",
+  "stage3_reservation_record": {
+    "enabled": false,
+    "skipped": true,
+    "reason": "flags.enable_g3 is false (Stage 0 default); the full labeled pool is used for G2 and no G3 test may be added later (plan Stage 11 risks/fallbacks)."
+  }
+}

@@ -1,0 +1,6 @@
+partition,eligibility,comparison_type,n_rows,n_pairs
+test,eligible_strict_g2,between_cats,2658,834
+test,eligible_strict_g2,within_cat,367,136
+test,unseen_photo,between_cats,4,1
+validation,eligible_strict_g2,between_cats,2643,836
+validation,eligible_strict_g2,within_cat,369,137

@@ -1,0 +1,26 @@
+{
+  "fitted_on": "unique fitting photos",
+  "n_fitting_photos": 1296,
+  "means": {
+    "mean_red": 0.5298927979849061,
+    "mean_green": 0.47604220368850025,
+    "mean_blue": 0.42486039486961025,
+    "std_luminance": 0.2233493286421082,
+    "mean_saturation": 0.27370756807368196,
+    "log_laplacian_var": 0.008133886804137954,
+    "aspect_ratio": 0.9368100859575221,
+    "log_area": 13.030548098104802
+  },
+  "stds": {
+    "mean_red": 0.09554240121291897,
+    "mean_green": 0.09194944087241981,
+    "mean_blue": 0.09633370874920133,
+    "std_luminance": 0.041523186259951994,
+    "mean_saturation": 0.1098342521082603,
+    "log_laplacian_var": 0.006390958754783814,
+    "aspect_ratio": 0.23054621863566163,
+    "log_area": 0.7717752944042096
+  },
+  "dropped_features": [],
+  "std_floor": 1e-12
+}

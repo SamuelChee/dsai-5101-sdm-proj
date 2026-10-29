@@ -1,0 +1,30 @@
+{
+  "evaluation_rows": "full strict-G2 validation subset",
+  "image_availability_strict_validation": 1.0,
+  "n_evaluation_rows": 3712,
+  "n_features_kept": 8,
+  "dropped_features": [],
+  "m4p_supported": true,
+  "M3P": {
+    "lambda": 0.1,
+    "validation_log_loss": 0.6887098826352382,
+    "beta": 0.06301010650610235
+  },
+  "M4P": {
+    "lambda": 1e-06,
+    "validation_log_loss": 0.6887918956088788,
+    "beta": 0.06435576512030329
+  },
+  "validation_contrasts": {
+    "visual_sharing_M2P_minus_M3P": {
+      "reference": "M2P",
+      "candidate": "M3P",
+      "improvement": -0.02354017657530083
+    },
+    "recorded_context_M3P_minus_M4P": {
+      "reference": "M3P",
+      "candidate": "M4P",
+      "improvement": -8.201297364052174e-05
+    }
+  }
+}

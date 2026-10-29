@@ -1,0 +1,15 @@
+{
+  "strict_validation": {
+    "n_responses": 3712,
+    "n_pairs": 1209,
+    "label": "adequate"
+  },
+  "strict_test": {
+    "n_responses": 3728,
+    "n_pairs": 1206,
+    "label": "adequate"
+  },
+  "g2_claim_allowed": true,
+  "frozen_without_heldout_outcomes": true,
+  "note": "This strict-G2 row set is used for all primary model comparisons (plan Stage 4)."
+}

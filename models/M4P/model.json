@@ -1,0 +1,20 @@
+{
+  "model": "M4P",
+  "lambda_selected": 1e-06,
+  "selection_rule": "strict-G2 validation log loss; ties < 1e-6 resolve to the larger penalty",
+  "with_position": true,
+  "beta": 0.06435576512030329,
+  "validation_log_loss": 0.6887918956088788,
+  "fit_diagnostics": {
+    "success": true,
+    "objective": 0.6857660185977426,
+    "max_abs_grad": 1.5532479615253902e-08,
+    "n_iterations": 192,
+    "retried": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "n_features": 8,
+  "evaluation_rows": "full strict-G2 validation subset",
+  "n_fitting_rows": 17456,
+  "n_evaluation_rows": 3712
+}

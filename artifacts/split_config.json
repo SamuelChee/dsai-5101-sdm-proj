@@ -1,0 +1,102 @@
+{
+  "stage": 3,
+  "seed": 20261028,
+  "seed_search": "none - the fixed seed is used exactly once per stratum",
+  "fractions": {
+    "fitting": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "allocation": "largest-remainder integer allocation; remainder ties favour fitting, then validation, then test",
+  "count_bands": [
+    "1",
+    "2-4",
+    "5-9",
+    "10+"
+  ],
+  "merge_threshold_pairs": 20,
+  "merged_strata": {},
+  "g3_reservation": {
+    "enabled": false,
+    "skipped": true,
+    "reason": "flags.enable_g3 is false (Stage 0 default); the full labeled pool is used for G2 and no G3 test may be added later (plan Stage 11 risks/fallbacks)."
+  },
+  "strata": [
+    {
+      "stratum": "between_cats|1",
+      "comparison_type": "between_cats",
+      "count_band": "1",
+      "n_pairs": 306,
+      "n_pairs_fitting": 214,
+      "n_pairs_validation": 46,
+      "n_pairs_test": 46,
+      "n_rows": 306,
+      "n_rows_fitting": 214,
+      "n_rows_validation": 46,
+      "n_rows_test": 46
+    },
+    {
+      "stratum": "between_cats|2-4",
+      "comparison_type": "between_cats",
+      "count_band": "2-4",
+      "n_pairs": 6611,
+      "n_pairs_fitting": 4628,
+      "n_pairs_validation": 992,
+      "n_pairs_test": 991,
+      "n_rows": 21587,
+      "n_rows_fitting": 15150,
+      "n_rows_validation": 3214,
+      "n_rows_test": 3223
+    },
+    {
+      "stratum": "within_cat|1",
+      "comparison_type": "within_cat",
+      "count_band": "1",
+      "n_pairs": 116,
+      "n_pairs_fitting": 81,
+      "n_pairs_validation": 18,
+      "n_pairs_test": 17,
+      "n_rows": 116,
+      "n_rows_fitting": 81,
+      "n_rows_validation": 18,
+      "n_rows_test": 17
+    },
+    {
+      "stratum": "within_cat|2-4",
+      "comparison_type": "within_cat",
+      "count_band": "2-4",
+      "n_pairs": 1016,
+      "n_pairs_fitting": 711,
+      "n_pairs_validation": 153,
+      "n_pairs_test": 152,
+      "n_rows": 2887,
+      "n_rows_fitting": 2011,
+      "n_rows_validation": 434,
+      "n_rows_test": 442
+    }
+  ],
+  "totals": {
+    "fitting": {
+      "n_rows": 17456,
+      "n_pairs": 5634
+    },
+    "validation": {
+      "n_rows": 3712,
+      "n_pairs": 1209
+    },
+    "test": {
+      "n_rows": 3728,
+      "n_pairs": 1206
+    }
+  },
+  "assertions": {
+    "disjoint_pairs": true,
+    "every_pair_assigned_exactly_once": true,
+    "every_g2_row_assigned": true,
+    "pair_comparison_type_unique": true,
+    "internal_test_labels_inaccessible": "structural: src.split.load_partition_rows refuses the test partition unless allow_test=True (Stage 10 only)"
+  },
+  "stop_go": {
+    "proceed": true
+  }
+}

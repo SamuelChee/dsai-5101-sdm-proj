@@ -5,3 +5,7 @@ scipy==1.18.1
 scikit-learn==1.9.1
 matplotlib==3.11.2
 jupyter==1.1.1
+# Pipeline (src/) additions, pinned to the versions actually used.
+pyarrow==26.0.0
+pytest==9.2.0
+networkx==3.7

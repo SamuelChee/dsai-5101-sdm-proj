@@ -1,0 +1,3 @@
+partition,eligibility,n_rows,n_pairs
+test,eligible_strict_g2,3728,1206
+validation,eligible_strict_g2,3712,1209

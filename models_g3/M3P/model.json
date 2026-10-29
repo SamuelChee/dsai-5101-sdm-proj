@@ -1,0 +1,20 @@
+{
+  "model": "M3P",
+  "lambda_selected": 0.01,
+  "selection_rule": "strict-G2 validation log loss; ties < 1e-6 resolve to the larger penalty",
+  "with_position": true,
+  "beta": 0.08394290947405714,
+  "validation_log_loss": 0.6881396588490565,
+  "fit_diagnostics": {
+    "success": true,
+    "objective": 0.6875598817449978,
+    "max_abs_grad": 4.742386500154218e-07,
+    "n_iterations": 16,
+    "retried": false,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+  },
+  "n_features": 8,
+  "evaluation_rows": "full strict-G2 validation subset",
+  "n_fitting_rows": 14010,
+  "n_evaluation_rows": 3012
+}

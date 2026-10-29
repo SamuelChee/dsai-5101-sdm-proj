@@ -1,0 +1,20 @@
+{
+  "model": "M2P",
+  "lambda_selected": 0.0001,
+  "selection_rule": "strict-G2 validation log loss; ties < 1e-6 resolve to the larger penalty",
+  "with_position": true,
+  "beta": 0.09350220753166111,
+  "validation_log_loss": 0.6651790653211932,
+  "fit_diagnostics": {
+    "success": true,
+    "objective": 0.6232973269124585,
+    "max_abs_grad": 8.381301339672443e-06,
+    "n_iterations": 35,
+    "retried": false,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+  },
+  "n_items": 1165,
+  "component_score_mean_max_abs": 1.194800100535442e-17,
+  "n_fitting_rows": 14010,
+  "n_strict_validation_rows": 3012
+}

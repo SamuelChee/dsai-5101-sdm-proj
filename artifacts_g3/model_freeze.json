@@ -1,0 +1,53 @@
+{
+  "signed_off_at_utc": "2026-10-29T06:36:56.720153+00:00",
+  "statement": "All models, penalties, preprocessing, and contrasts are frozen before loading internal-test outcomes. Fitting-only models; no refit on validation. Any bug correction triggers a versioned rerun and disclosure.",
+  "config_sha256": "7573eb46fdb6b742af60c053859b97ffc73117c2af515a8c08f8531d6cadfd8c",
+  "model_artifact_sha256": {
+    "models_g3\\M0\\model.json": "26ca86e98b2bb7739dae82dd56e21643c906ced4539d850d1fe95463ffd8f3b4",
+    "models_g3\\M0\\validation_predictions.parquet": "b82e0c8b12911a3f6b28197f33187a492c401a8e0b38843d786c34fe114210f7",
+    "models_g3\\M1\\model.json": "d941bfda28b7bb696c9f35a40543f4d444f9d0956cb070ff06a5ee8cbd2f4782",
+    "models_g3\\M1\\scores.csv": "96e9148824415b2775673643532b3f79df1bdb7b4c63cbed752c959ba82347d7",
+    "models_g3\\M1\\validation_predictions.parquet": "4d3b78562c2902bd6be2b4b66738afaa30432ded8c6243cd4ef2478977d052fc",
+    "models_g3\\M1P\\model.json": "7e9cd40f5ef6cffe25f2b8c1317ad057c07fbc2a19c0adf65c62c66737652110",
+    "models_g3\\M1P\\scores.csv": "ec49f6859fb6a9228dd6a13a6a363b2634b360bd2da08ca431a0eebcf5b2d8ad",
+    "models_g3\\M1P\\validation_predictions.parquet": "a026bfd5dbce511052d8994b0baa7c8c784b9741f111dca279a0b4c23253527e",
+    "models_g3\\M2\\model.json": "03fce7dc858037224971dc03356f0e5543a41e4c51654c182dd02e7557deb5f9",
+    "models_g3\\M2\\scores.csv": "6f69d55754feb977c339d9c74c3a09ec95e5371fc152600606fdefc2eb6e31a0",
+    "models_g3\\M2\\validation_predictions.parquet": "78dd982070344d9995c401cb835c6022346a8be8947e88e7264854daf5a67267",
+    "models_g3\\M2P\\model.json": "dceba359efb08f0955ed342c4b1682f12f142311f048318ff8aab39fdf917ce7",
+    "models_g3\\M2P\\scores.csv": "951b91058d97c8c9e1020f9eebf3814451470dc93c383f07e63a8b213b460ef8",
+    "models_g3\\M2P\\validation_predictions.parquet": "0a5334d8844f73725c2694a335389c9d65bb8fa11445c0bbbc0567a67e06f804",
+    "models_g3\\M3P\\coefficients.csv": "1c38e1c7edd9589c052827c8151dd8fbc3bc036387d4011b7564201324dea1dc",
+    "models_g3\\M3P\\model.json": "24c7826f42184b37a0e1cdcf49aa7a14061e4a1b6d58b302bf32b3c40da81ca4",
+    "models_g3\\M3P\\validation_predictions.parquet": "3cdc6d9a7727e62aaa1ead5458d608f0e3b56a06797b08f5691dfa5d3f2bf75e",
+    "models_g3\\M4P\\coefficients.csv": "1948b0d4aaf8ec51a518b5e35ab2cb42cc4a6e18ea2dd7bf0b4399df17df6307",
+    "models_g3\\M4P\\model.json": "7beeed333ec980f7050779f88138576d67d3bce7d8a5ee36d57714c476ffd264",
+    "models_g3\\M4P\\validation_predictions.parquet": "0afa87d66889d3d470c0ac3d0b4bf3c90a7028f23f3e43ea279e0b40018a1338"
+  },
+  "frozen_contrasts": [
+    {
+      "name": "photo_detail",
+      "reference": "M1P",
+      "candidate": "M2P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "position",
+      "reference": "M2",
+      "candidate": "M2P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "visual_sharing",
+      "reference": "M2P",
+      "candidate": "M3P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "recorded_context",
+      "reference": "M3P",
+      "candidate": "M4P",
+      "improvement": "reference loss minus candidate loss"
+    }
+  ]
+}

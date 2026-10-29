@@ -1,0 +1,20 @@
+{
+  "model": "M3P",
+  "lambda_selected": 0.1,
+  "selection_rule": "strict-G2 validation log loss; ties < 1e-6 resolve to the larger penalty",
+  "with_position": true,
+  "beta": 0.06301010650610235,
+  "validation_log_loss": 0.6887098826352382,
+  "fit_diagnostics": {
+    "success": true,
+    "objective": 0.6880655553939481,
+    "max_abs_grad": 2.222846363496723e-08,
+    "n_iterations": 9,
+    "retried": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "n_features": 8,
+  "evaluation_rows": "full strict-G2 validation subset",
+  "n_fitting_rows": 17456,
+  "n_evaluation_rows": 3712
+}

@@ -1,0 +1,4 @@
+partition,eligibility,n_rows,n_pairs
+test,eligible_strict_g2,3025,970
+test,unseen_photo,4,1
+validation,eligible_strict_g2,3012,973

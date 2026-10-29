@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "design": "primary",
+  "coverage_note": null,
+  "fractions": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "seeds": [
+    20261030,
+    20261031
+  ],
+  "common_validation": {
+    "n_responses": 1952,
+    "n_pairs": 645
+  },
+  "rechecks": {
+    "orientation_identity": true,
+    "count_row_objective_equivalence": true
+  },
+  "controls": {
+    "M2P": {
+      "mean_apparent_improvement": -0.025903791596157796,
+      "max_apparent_improvement": -0.014180715646574416,
+      "flagged": false
+    },
+    "M4P": {
+      "mean_apparent_improvement": -0.0011240403250068476,
+      "max_apparent_improvement": 0.00037080075758733066,
+      "flagged": false
+    }
+  },
+  "controls_note": "debugging checks, not formal proof that leakage is absent"
+}

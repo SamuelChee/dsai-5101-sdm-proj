@@ -1,0 +1,39 @@
+# Frozen pipeline configuration - run v2 (G3-enabled versioned rerun).
+#
+# enable_g3 was committed to TRUE before re-splitting, per plan Stage 11:
+# the photo-pool reservation happens in Stage 3 BEFORE any G2 partitioning.
+# All outputs are isolated in *_g3 directories; the v1 run's artifacts/,
+# tables/, figures/, and models/ are never touched by this config.
+# See runs_disclosure.md.
+
+run_id: v2_g3
+
+paths:
+  train_csv: dataset/train.csv
+  test_csv: dataset/test.csv
+  images_dir: dataset/images
+  artifacts_dir: artifacts_g3
+  tables_dir: tables_g3
+  figures_dir: figures_g3
+  models_dir: models_g3
+
+seeds:
+  split: 20261028
+  simulation: 20261029
+  learning_curves: [20261030, 20261031]
+  bootstrap: 20261101
+  synthetic_label_control: 20261102
+
+expected:
+  train_rows: 24896
+  test_rows: 6224
+  n_images: 1558
+
+split:
+  fractions: [0.70, 0.15, 0.15]  # fitting, validation, internal test
+  partitions: [fitting, validation, test]
+  count_bands: [1, 2-4, 5-9, 10+]
+  merge_threshold: 20  # strata with fewer pairs merge into comparison type
+
+flags:
+  enable_g3: true

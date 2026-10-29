@@ -1,0 +1,58 @@
+{
+  "context_variable": "pet_care",
+  "categories": [
+    "never",
+    "occasionally",
+    "past_regular",
+    "current_regular",
+    "unknown"
+  ],
+  "missing_encoded_as": "unknown",
+  "eligibility_thresholds": {
+    "min_responses": 100,
+    "min_pairs": 30
+  },
+  "per_category": {
+    "never": {
+      "n_fitting_responses": 5011,
+      "n_fitting_pairs": 3578,
+      "eligible": true
+    },
+    "occasionally": {
+      "n_fitting_responses": 4585,
+      "n_fitting_pairs": 3360,
+      "eligible": true
+    },
+    "past_regular": {
+      "n_fitting_responses": 4936,
+      "n_fitting_pairs": 3597,
+      "eligible": true
+    },
+    "current_regular": {
+      "n_fitting_responses": 2572,
+      "n_fitting_pairs": 2198,
+      "eligible": true
+    },
+    "unknown": {
+      "n_fitting_responses": 352,
+      "n_fitting_pairs": 344,
+      "eligible": true
+    }
+  },
+  "eligible_groups": [
+    "current_regular",
+    "never",
+    "occasionally",
+    "past_regular",
+    "unknown"
+  ],
+  "reference_group": "never",
+  "interaction_groups": [
+    "current_regular",
+    "occasionally",
+    "past_regular",
+    "unknown"
+  ],
+  "m4p_supported": true,
+  "unsupported_rule": "fewer than two eligible groups => M4P omitted"
+}

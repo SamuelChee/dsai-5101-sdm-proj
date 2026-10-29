@@ -1,0 +1,17 @@
+{
+  "stage": 11,
+  "status": "completed",
+  "coverage": {
+    "validation": {
+      "n_responses": 2290,
+      "n_pairs": 741,
+      "n_heldout_photos": 65
+    },
+    "test": {
+      "n_responses": 2336,
+      "n_pairs": 752,
+      "n_heldout_photos": 65
+    }
+  },
+  "note": "Separate G3 claim; no reserved G3 outcomes were used in G2 development."
+}

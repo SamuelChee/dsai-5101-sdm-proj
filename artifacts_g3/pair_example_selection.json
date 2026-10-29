@@ -1,0 +1,6 @@
+{
+  "threshold_responses": 20,
+  "n_pairs_meeting": 0,
+  "action": "omitted",
+  "rule": "fewer than two pairs meet the threshold; photo examples are omitted rather than lowering the threshold after seeing outcomes (plan Stage 7 decision rule)"
+}

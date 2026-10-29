@@ -1,0 +1,44 @@
+{
+  "M0": {
+    "p_a": 0.5155238586240477,
+    "validation_log_loss": 0.6921400963853569
+  },
+  "M1": {
+    "lambda": 1e-05,
+    "validation_log_loss": 0.6559869679241973,
+    "beta": null,
+    "component_score_mean_max_abs": 5.996141230043039e-17
+  },
+  "M1P": {
+    "lambda": 1e-05,
+    "validation_log_loss": 0.6548288570756792,
+    "beta": 0.0682375329545968,
+    "component_score_mean_max_abs": -2.2485529612661398e-17
+  },
+  "M2": {
+    "lambda": 0.0001,
+    "validation_log_loss": 0.6665023390064139,
+    "beta": null,
+    "component_score_mean_max_abs": 1.00656794285074e-18
+  },
+  "M2P": {
+    "lambda": 0.0001,
+    "validation_log_loss": 0.6651697060599374,
+    "beta": 0.06800171020634445,
+    "component_score_mean_max_abs": 9.20902586012379e-18
+  },
+  "validation_contrasts": {
+    "photo_detail_M1P_minus_M2P": {
+      "reference": "M1P",
+      "candidate": "M2P",
+      "improvement": -0.010340848984258244,
+      "note": "validation-set development contrast; the primary contrast is computed once on the internal test"
+    },
+    "position_M2_minus_M2P": {
+      "reference": "M2",
+      "candidate": "M2P",
+      "improvement": 0.001332632946476453,
+      "note": "validation-set development contrast; the primary contrast is computed once on the internal test"
+    }
+  }
+}

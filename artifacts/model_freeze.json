@@ -1,0 +1,53 @@
+{
+  "signed_off_at_utc": "2026-10-29T06:20:40.276518+00:00",
+  "statement": "All models, penalties, preprocessing, and contrasts are frozen before loading internal-test outcomes. Fitting-only models; no refit on validation. Any bug correction triggers a versioned rerun and disclosure.",
+  "config_sha256": "cf2201746a01126238138a460ff5f30d559ca6e7a8de953d71f42fd08c72b2a5",
+  "model_artifact_sha256": {
+    "models\\M0\\model.json": "46edaa359f62e69e535091cba9dbdda064a2b15add9ad2e543e3e58399e6f9cd",
+    "models\\M0\\validation_predictions.parquet": "64498e4fa0ab28f4a976f4f216748e4851d8d47de2e5c7e33404b7f4ba335af5",
+    "models\\M1\\model.json": "cb3c07a8dfeb2736cac6ee01728e269293b79631eefff0ce2e3693cb6a786d8e",
+    "models\\M1\\scores.csv": "9bf0d0c5fbcac8aad728f6a15cfc50ab052a5a39a1628dcef5c3396593b80764",
+    "models\\M1\\validation_predictions.parquet": "63adafb0d1c4fef8d61d6720b42168687da9715712b8254ce3f44611dbac5ce6",
+    "models\\M1P\\model.json": "b0568ac38c9c8cacf274891cbffaea5ebc3ab738c79ac7b24e2c6b6f95fa19a0",
+    "models\\M1P\\scores.csv": "499d2eff30fae57faba9b1ecf2d5c3f9ccb5a58d19bb7256e7bfc3138c9f199a",
+    "models\\M1P\\validation_predictions.parquet": "d93acf49beed1c13ab8415b447eeec65e31cdb25d7e24ef540890dd82a926913",
+    "models\\M2\\model.json": "27d5031104482009432e9562348afd8ee2895a329b0c712085cb39740339f215",
+    "models\\M2\\scores.csv": "095205952fe0aef8d4fcd416b4b97f1dd401d83f3c6bf364392782398c839ede",
+    "models\\M2\\validation_predictions.parquet": "04e99c0a733546c4aaadce063d479cebdabd519bf9bfbad00a8ce0cf7c371c7f",
+    "models\\M2P\\model.json": "a225b732cf8204abcb74c849255daf2d72628d8a339fc3b6187427c1bc416c9f",
+    "models\\M2P\\scores.csv": "05f1e9724c122d4b8ed2d415b8eb50cceec5019feb647172fddf9a4bfa8e9cfb",
+    "models\\M2P\\validation_predictions.parquet": "68420fbe4434513b351244e20a6e7ad16cb5f2aea17a0c914eecb7aec9a4bd5c",
+    "models\\M3P\\coefficients.csv": "7196ce67fba6891e43adff2a9e8c90a64ab31c7f8a76c32cedfbf9042d46f22b",
+    "models\\M3P\\model.json": "d06981dbc2606e63586a0134228bc6952eabd8b08de7b4e83bdb701be800ded6",
+    "models\\M3P\\validation_predictions.parquet": "20743b45e41df8b5f489ef239136ca7e754427a336fa2aa191e5835f12278e10",
+    "models\\M4P\\coefficients.csv": "aada7af20368602bdd5aa4bfb7e206468fe992c3726027bb7615ac84bf2e663d",
+    "models\\M4P\\model.json": "f5e2bbeebc67fab948b8326286cd7fcf8e8006c59a2f4d0bc4d726ab09cd6241",
+    "models\\M4P\\validation_predictions.parquet": "f2dcd8e8fbe37a28f34f8bc02f43f15172c6bd448fb8ea47fb4afed5ccb977a0"
+  },
+  "frozen_contrasts": [
+    {
+      "name": "photo_detail",
+      "reference": "M1P",
+      "candidate": "M2P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "position",
+      "reference": "M2",
+      "candidate": "M2P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "visual_sharing",
+      "reference": "M2P",
+      "candidate": "M3P",
+      "improvement": "reference loss minus candidate loss"
+    },
+    {
+      "name": "recorded_context",
+      "reference": "M3P",
+      "candidate": "M4P",
+      "improvement": "reference loss minus candidate loss"
+    }
+  ]
+}

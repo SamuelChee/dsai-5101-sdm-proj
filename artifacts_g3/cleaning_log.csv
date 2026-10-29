@@ -1,0 +1,13 @@
+action,scope,row_id,detail
+encode_unknown,train.gender,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,train.pet_history,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,train.pet_care,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,train.pet_contact,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,train.future_pet,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,train.mbti_ie,(column),508 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.gender,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.pet_history,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.pet_care,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.pet_contact,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.future_pet,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.
+encode_unknown,test.mbti_ie,(column),130 missing values to be encoded as 'unknown' per Stage 1 decision rule.

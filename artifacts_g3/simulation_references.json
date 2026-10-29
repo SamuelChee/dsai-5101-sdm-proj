@@ -1,0 +1,18 @@
+{
+  "label": "Mathematical properties of the specified simulations - not dataset findings",
+  "A": {
+    "oracle_expected_loss": 0.5911435867092711,
+    "note": "mean of h(2/3), h(2/3), h(0.8); plan reference 0.5911"
+  },
+  "B": {
+    "pooled_oracle": 0.6931471805599453,
+    "contextual_oracle": 0.5911435867092711,
+    "note": "equal mixture gives p=0.5 for every pair (h=ln 2); plan references 0.6931 and 0.5911"
+  },
+  "C": {
+    "pair_oracle": 0.5004024235381879,
+    "best_bt": 0.6931471805599453,
+    "restriction_gap": 0.19274475702175742,
+    "note": "symmetric cycle forces equal BT scores under equal weights; plan references 0.5004, 0.6931, gap 0.1927"
+  }
+}

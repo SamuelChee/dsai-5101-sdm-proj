@@ -1,0 +1,486 @@
+{
+  "stage": 1,
+  "config": {
+    "paths": {
+      "train_csv": "dataset/train.csv",
+      "test_csv": "dataset/test.csv",
+      "images_dir": "dataset/images",
+      "artifacts_dir": "artifacts",
+      "tables_dir": "tables"
+    },
+    "seeds": {
+      "split": 20261028,
+      "simulation": 20261029,
+      "learning_curves": [
+        20261030,
+        20261031
+      ],
+      "bootstrap": 20261101,
+      "synthetic_label_control": 20261102
+    },
+    "expected": {
+      "train_rows": 24896,
+      "test_rows": 6224,
+      "n_images": 1558
+    },
+    "flags": {
+      "enable_g3": false
+    }
+  },
+  "raw_file_hashes": {
+    "train_csv": {
+      "path": "dataset/train.csv",
+      "sha256": "36bae3173cd867124b8c514a8abfb87b4d9303facbfc8fdeef0ea7cfbb0622d8",
+      "n_bytes": 3624239
+    },
+    "test_csv": {
+      "path": "dataset/test.csv",
+      "sha256": "d8f6e9f8790ba722112c4620c0f60490e5354b8af3c2d1592ac204bb9a5c3534",
+      "n_bytes": 898984
+    }
+  },
+  "units": {
+    "train": {
+      "n_rows": 24896,
+      "n_distinct_cats": 237,
+      "n_distinct_photos": 1296,
+      "n_unordered_pairs": 8049,
+      "responses_per_pair": {
+        "min": 1,
+        "median": 3.0,
+        "mean": 3.093055037892906,
+        "max": 4,
+        "count_bands": {
+          "1": 422,
+          "2-4": 7627,
+          "5-9": 0,
+          "10+": 0
+        }
+      },
+      "responses_per_photo": {
+        "min": 7,
+        "median": 39.0,
+        "mean": 38.41975308641975,
+        "max": 73,
+        "count_bands": {
+          "1": 0,
+          "2-4": 0,
+          "5-9": 3,
+          "10+": 1293
+        }
+      }
+    },
+    "test": {
+      "n_rows": 6224,
+      "n_distinct_cats": 284,
+      "n_distinct_photos": 1389,
+      "n_unordered_pairs": 2029
+    },
+    "overlap": {
+      "cats_in_both": 237,
+      "photos_in_both": 1127,
+      "pairs_in_both": 0
+    }
+  },
+  "context_tabulation": {
+    "train": {
+      "gender": {
+        "n_missing": 508,
+        "values": {
+          "man": 13998,
+          "woman": 10390
+        },
+        "unexpected_values": []
+      },
+      "pet_history": {
+        "n_missing": 508,
+        "values": {
+          "current": 8650,
+          "never": 9315,
+          "past": 6423
+        },
+        "unexpected_values": []
+      },
+      "pet_care": {
+        "n_missing": 508,
+        "values": {
+          "current_regular": 3654,
+          "never": 7129,
+          "occasionally": 6470,
+          "past_regular": 7135
+        },
+        "unexpected_values": []
+      },
+      "pet_contact": {
+        "n_missing": 508,
+        "values": {
+          "daily": 5084,
+          "never": 1054,
+          "often": 4891,
+          "rarely": 7566,
+          "sometimes": 5793
+        },
+        "unexpected_values": []
+      },
+      "future_pet": {
+        "n_missing": 508,
+        "values": {
+          "no": 2382,
+          "unsure": 4834,
+          "yes": 17172
+        },
+        "unexpected_values": []
+      },
+      "mbti_ie": {
+        "n_missing": 508,
+        "values": {
+          "E": 6346,
+          "I": 14000,
+          "unknown": 4042
+        },
+        "unexpected_values": []
+      }
+    },
+    "test": {
+      "gender": {
+        "n_missing": 130,
+        "values": {
+          "man": 3505,
+          "woman": 2589
+        },
+        "unexpected_values": []
+      },
+      "pet_history": {
+        "n_missing": 130,
+        "values": {
+          "current": 2150,
+          "never": 2341,
+          "past": 1603
+        },
+        "unexpected_values": []
+      },
+      "pet_care": {
+        "n_missing": 130,
+        "values": {
+          "current_regular": 865,
+          "never": 1806,
+          "occasionally": 1637,
+          "past_regular": 1786
+        },
+        "unexpected_values": []
+      },
+      "pet_contact": {
+        "n_missing": 130,
+        "values": {
+          "daily": 1261,
+          "never": 264,
+          "often": 1175,
+          "rarely": 1946,
+          "sometimes": 1448
+        },
+        "unexpected_values": []
+      },
+      "future_pet": {
+        "n_missing": 130,
+        "values": {
+          "no": 621,
+          "unsure": 1186,
+          "yes": 4287
+        },
+        "unexpected_values": []
+      },
+      "mbti_ie": {
+        "n_missing": 130,
+        "values": {
+          "E": 1619,
+          "I": 3461,
+          "unknown": 1014
+        },
+        "unexpected_values": []
+      }
+    }
+  },
+  "images": {
+    "n_referenced": 1558,
+    "n_on_disk": 1558,
+    "n_missing": 0,
+    "missing": [],
+    "n_unreferenced_on_disk": 0,
+    "n_unreadable": 0,
+    "unreadable": [],
+    "duplicate_hash_groups": {}
+  },
+  "stop_go": {
+    "stop_condition_failures": [],
+    "proceed": true,
+    "rule": "No unresolved label or identity errors."
+  },
+  "checks": [
+    {
+      "check_id": "raw_file_hashes",
+      "scope": "train.csv/test.csv",
+      "status": "INFO",
+      "n_affected": 0,
+      "detail": "SHA-256 recorded; raw files left unchanged."
+    },
+    {
+      "check_id": "train_required_columns",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "All 13 required columns present in order."
+    },
+    {
+      "check_id": "train_row_count",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "24896 rows (README states 24896); matches."
+    },
+    {
+      "check_id": "train_row_id_uniqueness",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 duplicated train_row_id values."
+    },
+    {
+      "check_id": "test_required_columns",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "All 14 required columns present in order."
+    },
+    {
+      "check_id": "test_row_count",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "6224 rows (README states 6224); matches."
+    },
+    {
+      "check_id": "test_row_id_uniqueness",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 duplicated test_row_id values."
+    },
+    {
+      "check_id": "train_choice_labels",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "All train choices in {A, B}."
+    },
+    {
+      "check_id": "test_labels_blank",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "test choice blank in 6224/6224 rows; prob_a blank in 6224/6224 rows."
+    },
+    {
+      "check_id": "comparison_type_values",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "comparison_type values exactly ['between_cats', 'within_cat']."
+    },
+    {
+      "check_id": "comparison_type_values_test",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "comparison_type values exactly ['between_cats', 'within_cat']."
+    },
+    {
+      "check_id": "cat_identity_vs_comparison_type",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "a_cat == b_cat iff comparison_type == 'within_cat'."
+    },
+    {
+      "check_id": "cat_identity_vs_comparison_type_test",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "a_cat == b_cat iff comparison_type == 'within_cat'."
+    },
+    {
+      "check_id": "image_folder_matches_cat",
+      "scope": "train.a_image",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 rows where the image folder != a_cat."
+    },
+    {
+      "check_id": "image_folder_matches_cat_train_b",
+      "scope": "train.b_image",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 rows where the image folder != b_cat."
+    },
+    {
+      "check_id": "image_folder_matches_cat_test_a",
+      "scope": "test.a_image",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 rows where the image folder != a_cat."
+    },
+    {
+      "check_id": "image_folder_matches_cat_test_b",
+      "scope": "test.b_image",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "0 rows where the image folder != b_cat."
+    },
+    {
+      "check_id": "self_comparisons",
+      "scope": "train",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "No same-image self-comparisons."
+    },
+    {
+      "check_id": "self_comparisons_test",
+      "scope": "test",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "No same-image self-comparisons."
+    },
+    {
+      "check_id": "identical_response_rows",
+      "scope": "train",
+      "status": "INFO",
+      "n_affected": 0,
+      "detail": "0 rows in 0 identical-value groups; retained (they may be distinct annotators giving the same answer)."
+    },
+    {
+      "check_id": "unit_counts",
+      "scope": "train/test",
+      "status": "INFO",
+      "n_affected": 0,
+      "detail": "train: 237 cats, 1296 photos, 8049 unordered pairs; test: 284 cats, 1389 photos, 2029 unordered pairs; overlap: 1127 photos, 0 pairs."
+    },
+    {
+      "check_id": "context_gender_train",
+      "scope": "train.gender",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'man': 13998, 'woman': 10390}"
+    },
+    {
+      "check_id": "context_pet_history_train",
+      "scope": "train.pet_history",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'current': 8650, 'never': 9315, 'past': 6423}"
+    },
+    {
+      "check_id": "context_pet_care_train",
+      "scope": "train.pet_care",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'current_regular': 3654, 'never': 7129, 'occasionally': 6470, 'past_regular': 7135}"
+    },
+    {
+      "check_id": "context_pet_contact_train",
+      "scope": "train.pet_contact",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'daily': 5084, 'never': 1054, 'often': 4891, 'rarely': 7566, 'sometimes': 5793}"
+    },
+    {
+      "check_id": "context_future_pet_train",
+      "scope": "train.future_pet",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'no': 2382, 'unsure': 4834, 'yes': 17172}"
+    },
+    {
+      "check_id": "context_mbti_ie_train",
+      "scope": "train.mbti_ie",
+      "status": "WARN",
+      "n_affected": 508,
+      "detail": "missing=508; values={'E': 6346, 'I': 14000, 'unknown': 4042}"
+    },
+    {
+      "check_id": "context_gender_test",
+      "scope": "test.gender",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'man': 3505, 'woman': 2589}"
+    },
+    {
+      "check_id": "context_pet_history_test",
+      "scope": "test.pet_history",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'current': 2150, 'never': 2341, 'past': 1603}"
+    },
+    {
+      "check_id": "context_pet_care_test",
+      "scope": "test.pet_care",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'current_regular': 865, 'never': 1806, 'occasionally': 1637, 'past_regular': 1786}"
+    },
+    {
+      "check_id": "context_pet_contact_test",
+      "scope": "test.pet_contact",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'daily': 1261, 'never': 264, 'often': 1175, 'rarely': 1946, 'sometimes': 1448}"
+    },
+    {
+      "check_id": "context_future_pet_test",
+      "scope": "test.future_pet",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'no': 621, 'unsure': 1186, 'yes': 4287}"
+    },
+    {
+      "check_id": "context_mbti_ie_test",
+      "scope": "test.mbti_ie",
+      "status": "WARN",
+      "n_affected": 130,
+      "detail": "missing=130; values={'E': 1619, 'I': 3461, 'unknown': 1014}"
+    },
+    {
+      "check_id": "image_existence",
+      "scope": "images",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "1558/1558 referenced images exist; 1558 files on disk; 0 unreferenced files."
+    },
+    {
+      "check_id": "image_count_vs_readme",
+      "scope": "images",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "1558 image files on disk (README states 1558)."
+    },
+    {
+      "check_id": "image_readability",
+      "scope": "images",
+      "status": "PASS",
+      "n_affected": 0,
+      "detail": "1558/1558 existing referenced images readable by Pillow."
+    },
+    {
+      "check_id": "image_duplicate_content",
+      "scope": "images",
+      "status": "INFO",
+      "n_affected": 0,
+      "detail": "0 SHA-256 values shared by more than one image path."
+    },
+    {
+      "check_id": "official_test_coverage",
+      "scope": "test",
+      "status": "INFO",
+      "n_affected": 0,
+      "detail": "Official test rows by train overlap: {'both_images_seen_new_pair': 3112, 'one_image_seen': 1556, 'no_images_seen': 1556}."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "M4P",
+  "lambda_selected": 0.001,
+  "selection_rule": "strict-G2 validation log loss; ties < 1e-6 resolve to the larger penalty",
+  "with_position": true,
+  "beta": 0.08498673742518575,
+  "validation_log_loss": 0.6876980087642705,
+  "fit_diagnostics": {
+    "success": true,
+    "objective": 0.686040659317234,
+    "max_abs_grad": 9.630262696634229e-06,
+    "n_iterations": 63,
+    "retried": false,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+  },
+  "n_features": 8,
+  "evaluation_rows": "full strict-G2 validation subset",
+  "n_fitting_rows": 14010,
+  "n_evaluation_rows": 3012
+}
